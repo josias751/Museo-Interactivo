@@ -1,0 +1,59 @@
+.menu 
+{
+    list-style: none;
+    font-family: cursive;
+    float: right;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+.link {
+    color: crimson;
+    display: inline;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 9px;
+    padding-bottom: 5px;
+    /* Make the menu items left*/
+    float: left;
+}
+
+.link:hover {
+    background-color: rgb(8, 8, 0);
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+#interactive-image {
+    width: 600px;
+    height: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#image-info {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Efecto hover */
+#interactive-image:hover {
+    transform: scale(1.1); /* Zoom al pasar el ratón */
+}
+
+/* Mostrar la info al hacer clic */
+#interactive-image.clicked {
+    border: 5px solid #FF6347;
+}
